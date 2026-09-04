@@ -137,7 +137,7 @@ git init
 git add .
 git commit -m "feat: Full-stack Login App with Supabase"
 git branch -M main
-git remote add origin https://github.com/ArnanMaipradit-rmutt/vercel-login-app.git
+git remote add origin https://github.com/[YOUR-USERNAME]/[YOUR-REPOSITORY-NAME].git
 git push -u origin main
 ```
 
