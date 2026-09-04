@@ -20,6 +20,9 @@ if (databaseUrl) {
     ssl: databaseUrl.includes('localhost') || databaseUrl.includes('127.0.0.1')
       ? false
       : { rejectUnauthorized: false },
+    connectionTimeoutMillis: 10000,
+    idleTimeoutMillis: 30000,
+    max: 10,
   });
 }
 

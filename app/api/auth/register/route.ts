@@ -97,7 +97,7 @@ export async function POST(req: NextRequest) {
   } catch (error: any) {
     console.error('Register API Error:', error);
     return NextResponse.json(
-      { error: 'เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์ กรุณาลองใหม่อีกครั้ง' },
+      { error: error?.message ? `เกิดข้อผิดพลาด: ${error.message}` : 'เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์ กรุณาลองใหม่อีกครั้ง' },
       { status: 500 }
     );
   }
